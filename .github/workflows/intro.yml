@@ -1,0 +1,12 @@
+name: Intro to Githyb actions
+
+# When this workflow run
+on:
+  push:
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout
+        - run: echo "Hello World!"
